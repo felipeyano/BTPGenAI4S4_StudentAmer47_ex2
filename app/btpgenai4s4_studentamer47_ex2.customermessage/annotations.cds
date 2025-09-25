@@ -1,0 +1,1 @@
+using bTPGenAI4S4_StudentAmer47_ex2Srv as service from '../../srv/service';

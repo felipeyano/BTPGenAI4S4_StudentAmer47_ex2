@@ -1,0 +1,6 @@
+ID;customerMessageID;customerName;productName;customerId;productId;originatingCountry;fullMessageCustomerLanguage
+6e0b426a-08d6-45fe-8c51-9ee1dddaff92;1;Jean Dupont;Freezer;CUST001;PROD001;France;Le congélateur ne fonctionne pas correctement, le compresseur semble défectueux.
+7a3cf0eb-e784-42db-97da-ab44a17b324a;2;Marie Curie;Freezer;CUST002;PROD002;France;J'ai un problème de drainage avec le congélateur, l'eau s'accumule à l'intérieur.
+eb44fb1c-cf0f-4e82-a77c-701c0b3a73ab;3;Pierre Martin;Freezer;CUST003;PROD003;France;Les joints du congélateur ne fonctionnent pas bien, cela cause une fuite d'air.
+fe4e4661-396c-4e2b-99b8-7375b868e2bc;4;Sophie Laurent;Freezer;CUST004;PROD004;France;Le congélateur a été livré en retard et il y a des dommages visibles.
+04473b5c-20e4-4977-b816-0af095850ced;5;Luc Bernard;Freezer;CUST005;PROD005;France;Le service client est très lent à répondre à mes préoccupations concernant le compresseur.
