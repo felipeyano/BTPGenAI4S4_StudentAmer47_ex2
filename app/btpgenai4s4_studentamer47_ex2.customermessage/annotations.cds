@@ -83,7 +83,18 @@ annotate service.CustomerMessage with @(
                 Label : 'Service Order',
             },
         ],
-    }
+    },
+    UI.Identification : [
+        {
+            $Type : 'UI.DataField',
+            Value : customerMessageID,
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'bTPGenAI4S4_StudentAmer47_ex2Srv.Action1',
+            Label : 'Generate Reply',
+        },
+    ],
 );
 
 annotate service.CustomerMessage with {
