@@ -94,6 +94,11 @@ annotate service.CustomerMessage with @(
             Action : 'bTPGenAI4S4_StudentAmer47_ex2Srv.Action1',
             Label : 'Generate Reply',
         },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'bTPGenAI4S4_StudentAmer47_ex2Srv.Action2',
+            Label : 'Maintain SO',
+        },
     ],
 );
 
