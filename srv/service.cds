@@ -16,6 +16,16 @@ service bTPGenAI4S4_StudentAmer47_ex2Srv
             ServiceOrder,
             ServiceOrderDescription
         };
+
+    @odata.draft.enabled
+    entity ProductFAQ as projection on my.ProductFAQ
+    {
+            ID,
+            issue,
+            question,
+            answer
+    };
+
 }
 
 annotate bTPGenAI4S4_StudentAmer47_ex2Srv with @requires :

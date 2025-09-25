@@ -1,0 +1,154 @@
+{
+  "_version": "1.60.0",
+  "sap.app": {
+    "id": "btpgenai4s4studentamer47ex2.productfaqapplication",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.18.7",
+      "toolsId": "f0b0fdf7-eb65-4a13-8051-ac4428f7dc9b"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/service/bTPGenAI4S4_StudentAmer47_ex2/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "btpgenai4s4studentamer47ex2pro-display": {
+          "semanticObject": "btpgenai4s4studentamer47ex2pro",
+          "action": "display",
+          "title": "{{btpgenai4s4studentamer47ex2pro-display.flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.120.13",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "btpgenai4s4studentamer47ex2.productfaqapplication.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "ProductFAQList",
+          "target": "ProductFAQList"
+        },
+        {
+          "pattern": "ProductFAQ({key}):?query:",
+          "name": "ProductFAQObjectPage",
+          "target": "ProductFAQObjectPage"
+        }
+      ],
+      "targets": {
+        "ProductFAQList": {
+          "type": "Component",
+          "id": "ProductFAQList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/ProductFAQ",
+              "variantManagement": "Page",
+              "navigation": {
+                "ProductFAQ": {
+                  "detail": {
+                    "route": "ProductFAQObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ProductFAQObjectPage": {
+          "type": "Component",
+          "id": "ProductFAQObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/ProductFAQ"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
+}

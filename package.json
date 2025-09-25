@@ -34,7 +34,8 @@
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-btpgenai4s4_studentamer47_ex2.customermessage": "cds watch --open btpgenai4s4_studentamer47_ex2.customermessage/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-btpgenai4s4_studentamer47_ex2.customermessage": "cds watch --open btpgenai4s4_studentamer47_ex2.customermessage/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-btpgenai4s4_studentamer47_ex2.productfaqapplication": "cds watch --open btpgenai4s4_studentamer47_ex2.productfaqapplication/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -65,6 +66,7 @@
   },
   "lcap": true,
   "sapux": [
-    "app/btpgenai4s4_studentamer47_ex2.customermessage"
+    "app/btpgenai4s4_studentamer47_ex2.customermessage",
+    "app/btpgenai4s4_studentamer47_ex2.productfaqapplication"
   ]
 }
