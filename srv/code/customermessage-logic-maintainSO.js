@@ -65,13 +65,13 @@ if (attachedSOId) {
     const itemDur = {
         ServiceOrderItemDescription: 'Service Order duration',
         Product: 'SRV_01',
-        ServiceDuration: 1,
+        ServiceDuration: '1',
         ServiceDurationUnit: 'HR'
     };
     const itemQty = {
         ServiceOrderItemDescription: 'Service Order quantity',
         Product: 'SRV_02',
-        Quantity: 1,
+        Quantity: '1',
         QuantityUnit: 'EA'
     };
     const persResp = { PersonResponsible: '9980003640' };
